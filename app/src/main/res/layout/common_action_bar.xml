@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/y33"
+                android:gravity="center_vertical"
+                android:background="@color/selectorbg">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true">
+
+        <Button android:id="@+id/btn_action1"
+                android:layout_width="@dimen/x80"
+                android:layout_height="@dimen/y24"
+                android:layout_marginRight="@dimen/x16"
+                android:background="@drawable/action_bar1_border"
+                android:textColor="@color/red"
+                android:textSize="@dimen/commonC1" >
+        </Button>
+
+        <Button android:id="@+id/btn_action2"
+                android:layout_width="@dimen/x80"
+                android:layout_height="@dimen/y24"
+                android:layout_marginRight="@dimen/x16"
+                android:background="@drawable/action_bar2_border"
+                android:textColor="@color/black"
+                android:textSize="@dimen/commonC1" >
+        </Button>
+
+    </LinearLayout>
+
+</RelativeLayout>

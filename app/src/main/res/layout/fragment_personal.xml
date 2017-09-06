@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/main_bgColor"
+              android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/y33">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y65"
+                android:background="#ffffff"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/y10">
+
+                <ImageView
+                    android:layout_width="@dimen/y50"
+                    android:layout_height="@dimen/y50"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@mipmap/ic_head" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/y8"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/tvName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000"
+                        android:textSize="@dimen/commonC1"/>
+
+                    <TextView
+                        android:id="@+id/tvOrg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#808080"
+                        android:textSize="@dimen/commonC1"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llayoutUpdatepwd"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y33"
+                android:layout_marginTop="@dimen/y10"
+                android:background="@drawable/ll_selector"
+                android:clickable="true">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/y33"
+                    android:layout_weight="9.0"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="@dimen/y14"
+                        android:layout_height="@dimen/y14"
+                        android:layout_gravity="center_vertical"
+                        android:contentDescription="@string/app_name"
+                        android:src="@mipmap/ic_upwd"
+                        android:layout_marginLeft="@dimen/x10"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/x15"
+                        android:text="@string/pe_updatePwd"
+                        android:textColor="#000"
+                        android:textSize="@dimen/commonC1"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/y20"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.4"
+                    android:contentDescription="@string/app_name"
+                    android:src="@mipmap/ic_rightto" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llayoutVersion"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y33"
+                android:layout_marginTop="@dimen/y10"
+                android:background="@drawable/ll_selector"
+                android:clickable="true" >
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/y33"
+                    android:layout_weight="9.0"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/y14"
+                        android:layout_height="@dimen/y14"
+                        android:layout_gravity="center_vertical"
+                        android:contentDescription="@string/app_name"
+                        android:src="@mipmap/ic_version"
+                        android:layout_marginLeft="@dimen/x10"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/x15"
+                        android:text="@string/pe_softversion"
+                        android:textColor="#000"
+                        android:textSize="@dimen/commonC1" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/y20"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.4"
+                    android:contentDescription="@string/app_name"
+                    android:src="@mipmap/ic_rightto" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llayoutAbout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y33"
+                android:layout_marginTop="@dimen/y10"
+                android:background="@drawable/ll_selector"
+                android:clickable="true" >
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/y33"
+                    android:layout_weight="9.0"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="@dimen/y14"
+                        android:layout_height="@dimen/y14"
+                        android:layout_gravity="center_vertical"
+                        android:contentDescription="@string/app_name"
+                        android:src="@mipmap/ic_about"
+                        android:layout_marginLeft="@dimen/x10"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/x15"
+                        android:text="@string/pe_aboutus"
+                        android:textColor="#000"
+                        android:textSize="@dimen/commonC1"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/y20"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.4"
+                    android:contentDescription="@string/app_name"
+                    android:src="@mipmap/ic_rightto" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llayoutExit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y33"
+                android:layout_marginTop="@dimen/y10"
+                android:background="@drawable/ll_selector"
+                android:clickable="true" >
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/y33"
+                    android:layout_weight="9.0"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="@dimen/y14"
+                        android:layout_height="@dimen/y14"
+                        android:layout_gravity="center_vertical"
+                        android:contentDescription="@string/app_name"
+                        android:src="@mipmap/ic_exit"
+                        android:layout_marginLeft="@dimen/x10"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/x15"
+                        android:text="@string/pe_exit"
+                        android:textColor="#000"
+                        android:textSize="@dimen/commonC1"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/y20"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.4"
+                    android:contentDescription="@string/app_name"
+                    android:src="@mipmap/ic_rightto"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlayoutLogout"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/y33"
+                android:layout_marginTop="@dimen/y12"
+                android:background="@color/main" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/pe_logout"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/commonC1" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/main_bgColor"
+              android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y100"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/y15"
+        android:layout_marginBottom="@dimen/y15">
+
+        <ImageView
+            android:layout_width="@dimen/y55"
+            android:layout_height="@dimen/y55"
+            android:src="@mipmap/ic_launcher"
+            android:contentDescription="@string/app_name"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/tvCurVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/y7"
+            android:textColor="#000"
+            android:textSize="@dimen/common"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#CCC" />
+
+    <LinearLayout
+        android:id="@+id/llayoutCheckVersion"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y35"
+        android:background="@drawable/ll_selector"
+        android:clickable="true" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/y35"
+            android:layout_weight="9.0"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/x13"
+                android:text="@string/pe_checkVersion"
+                android:textColor="#000"
+                android:textSize="@dimen/commonC1"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#CCC" />
+
+    <LinearLayout
+        android:id="@+id/llayoutVersionLog"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y35"
+        android:background="@drawable/ll_selector"
+        android:clickable="true">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/y35"
+            android:layout_weight="9.0"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/x13"
+                android:text="@string/pe_updateLog"
+                android:textColor="#000"
+                android:textSize="@dimen/commonC1"/>
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#CCC" />
+
+    <include layout="@layout/include_copyright"/>
+
+</LinearLayout>

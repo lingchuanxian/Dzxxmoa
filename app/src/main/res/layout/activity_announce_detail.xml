@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_loading"></include>
+
+    <ScrollView
+        android:id="@+id/detail_scr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="none"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:id="@+id/llayout_all"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/common_detail_header" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/y10"
+                android:layout_marginRight="@dimen/y10"
+                android:layout_marginBottom="@dimen/y10"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tv_detail_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:lineSpacingExtra="1dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/commonA2" />
+
+                <WebView
+                    android:id="@+id/wbv_detail_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:layout_marginTop="@dimen/y15"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/common" />
+                <LinearLayout
+                    android:id="@+id/llayout_fj"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/y10">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/unline" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/fj"
+                            android:layout_marginLeft="@dimen/announce_detail_padding"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/common" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/announce_detail_padding"
+                            >
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/rclv_detail_fj"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:scrollbars="none"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/unline" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/announce_detail_padding"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/common"
+                        android:text="@string/scope"
+                        />
+                    <TextView
+                        android:id="@+id/tv_detail_scope"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/common"
+                        />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/unline" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/announce_detail_padding"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/common"
+                        android:text="@string/comment_sign"
+                        />
+                    <TextView
+                        android:id="@+id/tv_detail_sign"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/common"
+                        android:text=""
+                        />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/unline" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/announce_detail_padding"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/common"
+                        android:text="@string/comment_yiyue"
+                        />
+                    <TextView
+                        android:id="@+id/tv_detail_yiyue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/common"
+                        android:text=""
+                        />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/unline" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/announce_detail_padding"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/common"
+                        android:text="@string/comment_yijian"
+                        />
+                    <EditText
+                        android:id="@+id/edt_detail_yijian"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/y120"
+                        android:background="@drawable/edt_lin_border"
+                        android:layout_marginTop="@dimen/y2"
+                        android:padding="@dimen/x5"
+                        android:gravity="top|left"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y22"
+                    android:layout_marginBottom="@dimen/y16"
+                    android:layout_marginLeft="@dimen/announce_detail_padding"
+                    android:layout_marginRight="@dimen/announce_detail_padding"
+                    android:gravity="center"
+                    >
+                    <cn.com.kind.dzxxmoa.widget.RippleView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <Button
+                            android:id="@+id/btn_detail_sign"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/y32"
+                            android:text="@string/save_sign"
+                            android:textSize="@dimen/commonA1"
+                            android:textColor="@color/white"
+                            android:background="@drawable/btn_corner_detail"
+                            />
+                    </cn.com.kind.dzxxmoa.widget.RippleView>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rlayoutLogo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y200" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@mipmap/bg_logintop" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/y10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y37"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal" >
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4" />
+
+                <ImageView
+                    android:layout_width="@dimen/y13"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="8sp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@mipmap/ic_account" />
+
+                <EditText
+                    android:id="@+id/edtAccount"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6.7"
+                    android:background="@null"
+                    android:hint="@string/lg_plAccount"
+                    android:inputType="text"
+                    android:textSize="@dimen/common">
+                </EditText>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dip"
+                    android:layout_gravity="center"
+                    android:layout_weight="9.2"
+                    android:background="#e0e0e0" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y37"
+                android:layout_marginTop="0sp"
+                android:orientation="horizontal" >
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4" />
+
+                <ImageView
+                    android:layout_width="@dimen/y13"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="8sp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@mipmap/ic_pwd" />
+
+                <EditText
+                    android:id="@+id/edtPwd"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6.7"
+                    android:background="@null"
+                    android:hint="@string/lg_plPwd"
+                    android:inputType="textPassword"
+                    android:textSize="@dimen/common">
+                </EditText>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dip"
+                    android:layout_gravity="center"
+                    android:layout_weight="9.2"
+                    android:background="#e0e0e0" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y30"
+                android:layout_marginTop="20sp"
+                android:orientation="horizontal" >
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4" />
+
+                <Button
+                    android:id="@+id/btnLogin"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/y30"
+                    android:layout_weight="9.2"
+                    android:background="@drawable/btn_login"
+                    android:onClick="onClick"
+                    android:text="@string/lg_login"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/commonA2"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y22"
+                android:orientation="horizontal" >
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="9.2" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <CheckBox
+                            android:id="@+id/cbRemPwd"
+                            android:layout_width="@dimen/y11"
+                            android:layout_height="@dimen/y11"
+                            android:background="@drawable/chx_login"
+                            android:button="@null"/>
+
+                        <TextView
+                            android:id="@+id/tvRemPwd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:clickable="true"
+                            android:gravity="center_vertical"
+                            android:onClick="onClick"
+                            android:text="@string/lg_remPwd"
+                            android:textColor="#3c3c3c"
+                            android:textSize="@dimen/commonC1"/>
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:alpha="0" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="0sp"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <CheckBox
+                            android:id="@+id/cbAutoLogin"
+                            android:layout_width="@dimen/y11"
+                            android:layout_height="@dimen/y11"
+                            android:background="@drawable/chx_login"
+                            android:button="@null"/>
+
+                        <TextView
+                            android:id="@+id/tvAutoLogin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:clickable="true"
+                            android:gravity="center_vertical"
+                            android:onClick="onClick"
+                            android:text="@string/lg_autoLogin"
+                            android:textColor="#3c3c3c"
+                            android:textSize="@dimen/commonC1"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <include layout="@layout/include_copyright"/>
+    </LinearLayout>
+</ScrollView>

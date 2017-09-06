@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rclvMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            android:scrollbars="none"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:id="@+id/llayout_announce"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/home_lin_border_tr">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/y60"
+                                    android:src="@mipmap/ic_announce"
+                                    android:scaleType="fitXY"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/llayout_dynamic"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/home_lin_border_tr">
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/y60"
+                                    android:src="@mipmap/ic_group"
+                                    android:scaleType="fitXY"/>
+                        </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:id="@+id/llayout_mess"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/home_lin_border_trb">
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/y60"
+                                    android:src="@mipmap/ic_mess"
+                                    android:scaleType="fitXY"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/llayout_communication"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/home_lin_border_tb">
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/y60"
+                                    android:src="@mipmap/ic_commu"
+                                    android:scaleType="fitXY"/>
+                        </LinearLayout>
+
+                </LinearLayout>
+
+        </LinearLayout>
+
+</LinearLayout>

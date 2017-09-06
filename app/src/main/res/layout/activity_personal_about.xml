@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#fff"
+              android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x15"
+        android:layout_marginTop="@dimen/y15"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y30"
+            android:text="@string/pe_abKind"
+            android:textColor="#000"
+            android:textSize="@dimen/commonA2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/y5"
+            android:paddingBottom="@dimen/y5"
+            android:gravity="center_vertical"
+            android:text="@string/pe_abAddress"
+            android:textColor="#000"
+            android:textSize="@dimen/common" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/y5"
+            android:paddingBottom="@dimen/y5"
+            android:gravity="center_vertical"
+            android:text="@string/pe_abTel"
+            android:textColor="#000"
+            android:textSize="@dimen/common" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/y5"
+            android:paddingBottom="@dimen/y5"
+            android:gravity="center_vertical"
+            android:text="@string/pe_abFax"
+            android:textColor="#000"
+            android:textSize="@dimen/common" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/y5"
+            android:paddingBottom="@dimen/y5"
+            android:gravity="center_vertical"
+            android:text="@string/pe_abCode"
+            android:textColor="#000"
+            android:textSize="@dimen/common" />
+
+        <TextView
+            android:id="@+id/site"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/y5"
+            android:paddingBottom="@dimen/y5"
+            android:autoLink="web"
+            android:gravity="center_vertical"
+            android:text="@string/pe_abSite"
+            android:textColor="#000"
+            android:textSize="@dimen/common" />
+    </LinearLayout>
+
+</LinearLayout>

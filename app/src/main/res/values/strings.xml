@@ -1,0 +1,91 @@
+<resources>
+    <string name="app_name">综合办公</string>
+    <string name="loading">正在处理，请稍候...</string>
+    <string name="confirm">确定</string>
+    <string name="message">提示</string>
+    <string name="cancle">取消</string>
+    <string name="returnDataFormatError">返回数据的格式异常</string>
+    <string name="customactivityoncrash_error_activity_tell_us">SEND TO US</string>
+    <!--登录页面-->
+    <string name="lg_plAccount">请输入帐号</string>
+    <string name="lg_plPwd">请输入密码</string>
+    <string name="lg_login">登&#160;&#160;&#160;&#160;&#160;录</string>
+    <string name="lg_remPwd">记住密码</string>
+    <string name="lg_autoLogin">自动登录</string>
+    <string name="lg_copyrightPart1">版权信息:福建省凯特科技有限公司</string>
+    <string name="lg_copyright2">Copyright © 2017 </string>
+    <string name="lg_copyrightPart2">All Rights Reserved</string>
+    <string name="lg_plInputAccount">请输入帐号</string>
+    <string name="lg_plInputPwd">请输入密码</string>
+    <string name="lg_logining">正在登录，请稍候...</string>
+    <string name="lg_moreExit">再按一次退出程序</string>
+    <string name="login_timeout">登录超时，请重新登录</string>
+    <string name="lg_esign">E手签登录</string>
+    <string name="lg_missEsign">您尚未安装E手签APP\n是否立即安装?</string>
+    <string name="lg_waiting">正在连接，请稍候...</string>
+    <string name="lg_connected">连接成功！</string>
+    <string name="lg_downloading">正在下载...</string>
+    <string name="lg_keyCheckFail">证书验证失败。</string>
+    <!--首页-->
+    <string name="in_index">首页</string>
+
+    <!--个人中心-->
+    <string name="pe_personal">个人中心</string>
+    <string name="pe_updatePwd">修改密码</string>
+    <string name="pe_softversion">软件版本</string>
+    <string name="pe_aboutus">关于我们</string>
+    <string name="pe_exit">退出</string>
+    <string name="pe_logout">注&#160;&#160;&#160;&#160;&#160;销</string>
+    <string name="pe_modifyPwd">修改密码</string>
+    <string name="pe_oldPwd">旧&#160;&#160;密&#160;&#160;码:</string>
+    <string name="pe_newPwd">新&#160;&#160;密&#160;&#160;码:</string>
+    <string name="pe_confirmPwd">确认密码:</string>
+    <string name="pe_inputOldPwd">请输入旧密码</string>
+    <string name="pe_inputNewPwd">请输入新密码</string>
+    <string name="pe_reInputPwd">请再次输入新密码</string>
+    <string name="pe_noSameNewAndRePwd">新密码和重复密码不一致</string>
+    <string name="pe_submit">提&#160;&#160;&#160;&#160;&#160;交</string>
+    <string name="pe_modifyPwdSuccess">密码修改成功</string>
+    <string name="pe_curVersion">当前版本 : </string>
+    <string name="pe_checkVersion">检查新版本</string>
+    <string name="pe_updateLog">更新日志</string>
+    <string name="pe_versionUpdate">版本更新</string>
+    <string name="pe_alreadyNewest">当前已是最新版本！</string>
+    <string name="pe_checkingVersion">正在检测新版本</string>
+    <string name="pe_findNewVersion">检测到新版本</string>
+    <string name="pe_updateRightNow">检测到新版本,是否立即下载？</string>
+    <string name="pe_logVersion">版本:</string>
+    <string name="pe_logDate">更新日期:</string>
+    <string name="pe_logExplain">更新说明:</string>
+    <string name="pe_abKind">福建省凯特科技有限公司</string>
+    <string name="pe_abAddress">地址:&#160;&#160;福建省福州市晋安区秀山路63-1号5楼</string>
+    <string name="pe_abTel">电话:&#160;&#160;0591-87732332</string>
+    <string name="pe_abFax">传真:&#160;&#160;0591-87723743</string>
+    <string name="pe_abCode">邮编:&#160;&#160;350012</string>
+    <string name="pe_abSite">网址:&#160;&#160;<a href="www.kind.com.cn">www.kind.com.cn</a></string>
+    <string name="pe_exitContent">确定要退出本系统吗？</string>
+    <string name="pe_logoutContent">确定要注销登录吗？</string>
+   <!--信息模块-->
+    <string name="ho_announce">通知公告</string>
+    <string name="ho_group">集团动态</string>
+    <string name="ho_mess">司务公开</string>
+    <string name="ho_commu">交流园地</string>
+    <string name="an_input_search">请输入关键字查询</string>
+    <string name="an_depart">发布部门</string>
+    <string name="tongzhi">通知</string>
+    <string name="fj">附&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;件：</string>
+    <string name="scope">发布范围：</string>
+    <string name="comment_sign">签阅意见：</string>
+    <string name="comment_yiyue">已阅人员：</string>
+    <string name="comment_yijian">意&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;见：</string>
+    <string name="save_sign">签&#160;&#160;&#160;&#160;&#160;&#160;阅</string>
+    <string name="sign_comment">请输入您的意见，不能为空</string>
+    <string name="sign_success">签阅成功!!</string>
+    <!--收文管理-->
+    <string name="collectdoc_main_enclosure">收文正文：</string>
+    <string name="collectdoc_else_enclosure">其他附件：</string>
+    <string name="ho_collectDoc_manage">收文管理</string>
+    <string name="ho_collectDoc_detail">收文详情</string>
+    <string name="ho_sendDoc_manage">发文管理</string>
+    <string name="ho_supervision_manage">督查督办</string>
+</resources>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="announce_detail_padding">@dimen/y6</dimen>
+</resources>
